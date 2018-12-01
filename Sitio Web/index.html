@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Android GPS Tracker</title>
+	<link rel="stylesheet" href="vistas/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="vistas/css/estilos.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid">
+			<h3>Android<small>  -  Sitio Web en Desarrollo</small></h3>
+			<h5>1. Ingresa a Terminales y Crear un nombre<br>2. Descarga la aplicacion: <a href="https://mega.nz/#!91wQ2IJA!JhSGNNZpSznyKOUBB1NJaFtO2wrZJvnWvNwFRZwaoO8">Descargar</a><br>3. Instala la aplicacion<br>4. En la aplicacion escribe el nombre del Dispositivo<br>5. Enciende</h5>
+
+			<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Mapa</a>
+    </div>
+
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="nav-item">
+           <a class="nav-link" href="vistas/terAndroid.php" target="enlace">Terminales</a>
+        </li>
+    
+           <li class="dropdown closed">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Ejemplo<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" target="enlace">Agregar</a></li>
+            <li><a href="#" target="enlace">Listar</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+		</div>  
+
+	</header>
+
+
+
+<div class="container-fluid" id="centro">
+
+	<section class="row">
+
+      <div class="myIframe" >
+      	<iframe width="100%" height="700px" frameborder="0" name="enlace" src="vistas/tabla_info.php" onload="autofitIframe(this);"></iframe>
+      </div>
+			
+   </section>
+	
+</div> 
+
+      <footer>
+		<div class="container">
+			<h3>Carlos Prato<small> - 0426-3957066</small></h3>
+			<h4>ultima Modificacion: Febreo - 2018</h4>
+		</div>
+	</footer>  
+
+
+
+<script src="vistas/Bootstrap/jquery-3.1.1.min.js"></script>
+<script src="vistas/Bootstrap/bootstrap.min.js"></script>
+		
+
+</body>
+
+
+<script language="JavaScript">
+//Ajusta el tamaño del iframe para evitar el scroll (errores)
+//Se Queria ajustar el height(altura) del index.html de acuerdo a la altura del iframe para evitar scroll
+function autofitIframe(id){
+
+  /*var ajuste = 0;
+  id.style.height = "600px";
+  if (!window.opera && document.all && document.getElementById){
+
+    var ajuste = (0.0147*parseInt(id.contentWindow.document.body.scrollHeight)-7.026)*60;
+    ajuste = parseInt(ajuste,10);
+    id.style.height= id.contentWindow.document.body.scrollHeight+ajuste;
+
+
+  } else if(document.getElementById) {
+    
+    var ajuste = (0.0147*parseInt(id.contentDocument.body.scrollHeight)-7.026)*60;
+    ajuste = parseInt(ajuste,10);
+    id.style.height=id.contentDocument.body.scrollHeight+ajuste+"px";
+  }
+*/
+
+}
+</script>
+</html>
